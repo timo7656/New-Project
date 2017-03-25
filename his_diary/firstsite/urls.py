@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-
+#주소 역할을 한다!!
 urlpatterns = [
-    url(r'^diary/', include('diary.urls')),
+    url(r'^', include('diary.urls')),
     url(r'^admin/', admin.site.urls),
 ]
